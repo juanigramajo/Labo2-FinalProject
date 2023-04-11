@@ -1,0 +1,870 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(98, 141, 226);
+}
+
+.pError {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+.textUsuaroNoAurizado {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+
+/* INDEX.PHP */
+
+#mainIndex {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#formIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 20rem;
+    height: 23rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+#fieldsetIndex {
+    display: flex;
+    flex-direction: column;
+}
+
+#legendIndex {
+    color: rgb(214, 82, 82);
+    font-size: 1.5rem;
+}
+
+.inputsIndex {
+    border: solid rgb(214, 82, 82) 2.5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#buttonsubIndex {
+    height: 4rem;
+    width: 10rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    align-self: center;
+    background-color: white;
+}
+
+
+
+/* USUARIO_LISTADO.PHP */
+
+#sectionUsuarioListado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+#mainUsuarioListado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    border: solid black 3px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 50rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+thead {
+    color: white;
+    background-color: rgb(224, 39, 85);
+}
+
+td, tr {
+    border: solid black 3px;
+}
+
+td {
+    background-color: white;
+    width: calc(100%/6);
+}
+
+#buttomHide {
+    background-color: rgb(224, 39, 85);
+    color: white;
+    text-decoration: none;
+    margin-top: 0.3rem;
+    padding: 0.8rem;
+    width: 7rem;
+    text-align: center;
+}
+
+.buttonsEditDeleteUser {
+    width: 35%;
+    padding: 0.4rem;
+}
+
+
+
+/* MENU.PHP */
+
+#navMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionUserMenu {
+    display: flex;
+
+    align-items: center;
+}
+
+#imgUserMenu {
+    width: 2.5rem;
+    margin-right: 0.6rem;
+}
+
+#barrita {
+    margin-left: 0.6rem;
+}
+
+#cerrarSesionButton {
+    color: black;
+    margin-left: 0.6rem;
+}
+
+#hrMenu {
+    padding: 0.16rem;
+    background-color: rgb(224, 39, 85);
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.pMenu {
+    font-weight: bold;
+}
+
+.aMenu {
+    background-color: rgb(224, 39, 85);
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem;
+    width: 15rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.LastMiddleAMenu {
+    margin-bottom: 2rem;
+}
+
+#lastAMenu {
+    margin-bottom: 3rem;
+}
+
+
+
+/* CENTER.PHP */
+
+#sectionCenter {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#navCenter {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* PELICULA_ALTA.PHP */
+
+#sectionPeliculaAlta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+#mainPeliculaAlta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formAltaPelicula {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 25rem;
+    height: 32rem;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+#fieldsetAlta {
+    display: flex;
+    flex-direction: column;
+}
+
+#legendAlta {
+    color: rgb(214, 82, 82);
+    font-size: 1.5rem;
+}
+
+.inputsAlta {
+    border: solid rgb(214, 82, 82) 2.5px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.labelText {
+    margin-top: 1rem;
+}
+
+.othersInputsAlta {
+    border: solid rgb(214, 82, 82) 2.5px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#select {
+    border: solid rgb(214, 82, 82) 2.5px;
+}
+
+#buttonsubAlta {
+    height: 3rem;
+    width: 10rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    align-self: center;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+#buttomBack {
+    background-color: rgb(224, 39, 85);
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 9rem;
+    text-align: center;
+}
+
+
+
+/* PELICULA_ALTA_PROCESS.PHP */
+
+#sectionAltaProcess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.pPeliculaAltaProcess {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* SHOWALTA.PHP */
+
+#articleShowAlta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 38rem;
+    width: 23rem;
+    background-color: rgb(162, 180, 218);
+    border: solid black 0.2px;
+}
+
+.imgShowed {
+    width: 20rem;
+}
+
+
+
+/* PELICULA_LISTADO.PHP */
+
+#sectionPeliculaListado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+#sectionNavBoton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navPeliculaListado {
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionButtonsPeliculaListado {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.buttonsPeliculaListado {
+    background-color: rgb(224, 39, 85);
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 11rem;
+    text-align: center;
+}
+
+#mainPeliculaListado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+#articleListado {
+    display: flex;
+    background-color: rgba(213, 191, 216, 0.856);
+    border: solid black 0.2px;
+    margin-bottom: 3rem;
+}
+
+.imgPeliculaListado {
+    width: 30%;
+    padding: 1rem;
+}
+
+#sectionDatosArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buttonsEditDelete {
+    width: 7%;
+}
+
+#formBuscador {
+    display: flex;
+    justify-content: space-evenly;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    width: 50rem;
+    height: 2rem;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+#inputSearch {
+    border: solid rgb(214, 82, 82) 2.5px;
+    padding: 1rem;
+    width: 30rem;
+}
+
+#inputSubmitSearch {
+    height: 3rem;
+    width: 8rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    align-self: center;
+    background-color: white;
+    text-decoration: none;
+}
+
+#inputCleanSearch {
+    height: 2.6rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    align-self: center;
+    background-color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+/* PELICULA_DELETE.PHP */
+
+#mainPeliculaDelete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+#pSureDelete {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sectionButtonsDelete {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsPeliculaDelete {
+    height: 3rem;
+    width: 10rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+/* PELICULA_DELETE_DONE.PHP */
+
+.pDeleteDone {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* PELICULA_UPDATE.PHP */
+
+#mainPeliculaUpdate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formUpdate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 25rem;
+    height: 67rem;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+#labelTextTitulo {
+    margin-top: 0rem;
+}
+
+.inputsUpdate {
+    border: solid rgb(214, 82, 82) 2.5px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#fieldsetDeleteChoose {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#fieldsetRadios {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#textPortadaForm {
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#fieldsetImgChoose {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#figureImgChoose {
+    width: 40%;
+    text-align: center;
+}
+
+.imgPortadaUpdate {
+    width: 100%;
+}
+
+.radios {
+    margin-left: 0.5rem;
+}
+
+#fieldsetButtonsUpdate {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsPeliculaUpdate {
+    width: 10rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.buttonCancelarUpdate {
+    width: 8rem;
+}
+
+
+
+/* PELICULAS_FAVORITAS.PHP */
+
+#mainPeliculasFavoritas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66.5%;
+    margin-bottom: 3.5rem;
+}
+
+#textNoFav {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+
+/* PELICULAS_FAVORITAS_DONE.PHP */
+
+#textPeliculasFavDone {
+    font-size: 1.3rem;
+}
+
+#articlePeliculasFavDone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(213, 191, 216, 0.856);
+    border: solid black 0.2px;
+    height: 25rem;
+}
+
+
+
+/* PELICULAS_FAVORITAS_DELETE.PHP */
+
+#articlePeliculasDelete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(213, 191, 216, 0.856);
+    border: solid black 0.2px;
+    height: 25rem;
+}
+
+
+
+
+/* CONTACTENOS.PHP */
+
+#mainContact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+#formContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 50rem;
+    height: 30rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+#fieldsetContact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#legendIndex {
+    color: rgb(214, 82, 82);
+    font-size: 1.5rem;
+}
+
+.inputsIndex {
+    border: solid rgb(214, 82, 82) 2.5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#buttonsubContact {
+    height: 4rem;
+    width: 7rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid 1.5px;
+    align-self: center;
+    background-color: white;
+}
+
+textarea {
+    border: solid rgb(214, 82, 82) 2.5px;
+}
+
+#labelMensaje {
+    margin-top: 1rem;
+}
+
+#h2contact {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* USUARIO_ALTA.PHP */
+
+#formAltaUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 25rem;
+    height: 40rem;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+#fieldsetAlta {
+    display: flex;
+    flex-direction: column;
+}
+
+#legendAlta {
+    color: rgb(214, 82, 82);
+    font-size: 1.5rem;
+}
+
+.inputsAlta {
+    border: solid rgb(214, 82, 82) 2.5px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.labelText {
+    margin-top: 1rem;
+}
+
+.othersInputsAlta {
+    border: solid rgb(214, 82, 82) 2.5px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#select {
+    border: solid rgb(214, 82, 82) 2.5px;
+}
+
+#buttonsubAlta {
+    height: 3rem;
+    width: 10rem;
+    color: rgb(214, 82, 82);
+    border: rgb(214, 82, 82) solid;
+    align-self: center;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+#buttomBack {
+    background-color: rgb(224, 39, 85);
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 9rem;
+    text-align: center;
+}
+
+
+
+/* SHOWALTAUSER.PHP */
+
+#articleShowAltaUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25rem;
+    width: 23rem;
+    background-color: rgb(162, 180, 218);
+    border: solid black 0.2px;
+}
+
+.imgShowed {
+    width: 20rem;
+}
+
+
+
+/* USUARIO_UPDATE.PHP */
+
+#formUpdateUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 25rem;
+    height: 67rem;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+#imgUserUpdate {
+    width: 9rem;
+}
+
+
+
+/* USUARIO_DELETE.PHP */
+
+#articleUsuarioDelete {
+    display: flex;
+    background-color: rgba(213, 191, 216, 0.856);
+    border: solid black 0.2px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+#imgUserDelete {
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+
+
+/* CONFIGURACION.PHP */
+
+#formConfig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: grey solid 0.1px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(90, 90, 90) 2px 2px 3px 2px;
+    width: 50rem;
+    height: 40rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.fieldsetsRadios {
+    display: flex;
+    justify-content: center;
+}
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightRadios {
+    margin-left: 3rem;
+}
+
+.fieldsetTitleStyle {
+    margin-bottom: 1rem;
+}
+
+.imgFondos {
+    width: 20rem;
+}
+
+
+
+/* CONFIGURACION_DONE.PHP */
+
+#pConfig {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?php echo $ruta;?>/style.css">
+    <meta name="description" content="Películas">
+    <meta name="author" content="Gramajo Juan Ignacio">
+    <title>TP011 Laboratorio</title>
+</head>
+<body>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+        if ( !empty($_SESSION['user']) ) {
+            if ( !empty($_COOKIE['estilo_'. $_SESSION['id']])) {
+
+                $dato = $_COOKIE['estilo_'. $_SESSION['id']];
+
+                switch ($dato) {
+                    case 'Clásico':
+                        $style = 'style.css';
+                        break;
+                    case 'Captain':
+                        $style = 'captain.css';
+                        break;
+                    case 'Hulk':
+                        $style = 'hulk.css';
+                        break;
+                    case 'IronMan':
+                        $style = 'ironman.css';
+                        break;
+                }
+
+            } else {
+                $style = "style.css";
+            }
+        } else {
+            $style = "style.css";
+        }
+
+        echo '<link rel="stylesheet" href="'. $ruta. '/'. $style.'">';
+    ?>
+    
+    <meta name="description" content="Películas">
+    <meta name="author" content="Gramajo Juan Ignacio">
+    <title>TP011 Laboratorio</title>
+</head>
+<body>
